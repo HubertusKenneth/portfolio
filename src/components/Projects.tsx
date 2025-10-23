@@ -10,6 +10,8 @@ import Willify1 from "../assets/projects/Willify1.png";
 import Willify2 from "../assets/projects/Willify2.png";
 import Willify3 from "../assets/projects/Willify3.png";
 import Willify4 from "../assets/projects/Willify4.png";
+import JawelsDiamond1 from "../assets/projects/JawelsDiamond1.png";
+import JawelsDiamond2 from "../assets/projects/JawelsDiamond2.png";
 
 const projects = [
   {
@@ -18,14 +20,9 @@ const projects = [
     description:
       "A web-based LMS built with PHP, MySQL, and Gemini API. Features include role-based authentication, class & material management, gamified quizzes, discussion forums, and an AI-powered chatbot assistant.",
     date: "Feb 2025 – Jul 2025",
-    image:
-      Edufun1,
+    image: Edufun1,
     github: "https://github.com/HubertusKenneth/SE-EduFun",
-    gallery: [
-      Edufun1,
-      Edufun2,
-      Edufun3,
-    ],
+    gallery: [Edufun1, Edufun2, Edufun3],
   },
   {
     id: 2,
@@ -33,15 +30,9 @@ const projects = [
     description:
       "Front-end project using HTML, CSS, JavaScript with features like responsive nav, registration form, playlists, song pages with lyrics & audio player, and auto-play.",
     date: "Feb 2024 – Jun 2024",
-    image:
-      Willify1,
+    image: Willify1,
     github: "https://github.com/HubertusKenneth/Willify",
-    gallery: [
-      Willify1,
-      Willify2,
-      Willify3,
-      Willify4,
-    ],
+    gallery: [Willify1, Willify2, Willify3, Willify4],
   },
   {
     id: 3,
@@ -49,13 +40,19 @@ const projects = [
     description:
       "A responsive personal portfolio website built with React, Tailwind, and Framer Motion showcasing design & development projects with smooth animations.",
     date: "Personal Project",
-    image:
-      Porto1,
+    image: Porto1,
     github: "https://github.com/HubertusKenneth/portfolio",
-    gallery: [
-      Porto1,
-      Porto2,
-    ],
+    gallery: [Porto1, Porto2],
+  },
+  {
+    id: 4,
+    title: "JAwels & Diamonds",
+    description:
+      "A responsive personal portfolio website built with React, Tailwind, and Framer Motion showcasing design & development projects with smooth animations.",
+    date: "Personal Project",
+    image: JawelsDiamond1,
+    github: "",
+    gallery: [JawelsDiamond1, JawelsDiamond2],
   },
 ];
 
@@ -140,7 +137,8 @@ const Projects = () => {
             <motion.div
               key={project.id}
               variants={itemVariants}
-              className="relative bg-gray-800 rounded-2xl overflow-hidden shadow-lg border border-gray-700">
+              className="relative bg-gray-800 rounded-2xl overflow-hidden shadow-lg border border-gray-700"
+            >
               <motion.div className="relative h-56 overflow-hidden group">
                 <img
                   src={project.image}
@@ -158,14 +156,24 @@ const Projects = () => {
                   >
                     View Project
                   </button>
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition transform hover:scale-110"
-                  >
-                    <Github size={22} className="text-white" />
-                  </a>
+
+                  {project.github ? (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition transform hover:scale-110"
+                    >
+                      <Github size={22} className="text-white" />
+                    </a>
+                  ) : (
+                    <div
+                      className="p-3 bg-gray-800 rounded-full opacity-40 cursor-not-allowed"
+                      title="GitHub source not available"
+                    >
+                      <Github size={22} className="text-white" />
+                    </div>
+                  )}
                 </div>
               </motion.div>
 
