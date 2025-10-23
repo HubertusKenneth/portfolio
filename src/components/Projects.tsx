@@ -46,10 +46,10 @@ const projects = [
   },
   {
     id: 4,
-    title: "JAwels & Diamonds",
+    title: "JAwels & Diamonds - Online Store",
     description:
-      "A responsive personal portfolio website built with React, Tailwind, and Framer Motion showcasing design & development projects with smooth animations.",
-    date: "Personal Project",
+      "A web-based jewelry store application developed with ASP.NET using Domain Driven Design. The system allows admins to manage jewels, handle orders, and generate transaction reports, while customers can register, browse jewelry, add to cart, and checkout securely.",
+    date: "Feb 2024 - Jun 2024",
     image: JawelsDiamond1,
     github: "",
     gallery: [JawelsDiamond1, JawelsDiamond2],
