@@ -1,11 +1,11 @@
 // import React from "react";
-import { Code, Users, Trophy, Calendar } from "lucide-react";
+import { Code2, Users, Layers, Puzzle } from "lucide-react";
 import { motion } from "framer-motion";
 
 const About = () => {
   const highlights = [
     {
-      icon: <Code className="text-blue-400" size={24} />,
+      icon: <Code2 className="text-blue-400" size={24} />,
       title: "Development",
       description:
         "Learning multiple programming languages including C, PHP, and JavaScript",
@@ -17,18 +17,19 @@ const About = () => {
         "Collaborative team player with experience in group projects and organizations",
     },
     {
-      icon: <Calendar className="text-green-400" size={24} />,
-      title: "Event Management",
+      icon: <Layers className="text-green-400" size={24} />,
+      title: "System Design",
       description:
-        "Gaining experience in organizing and coordinating events",
+        "Understanding application architecture, database design, and scalable system structure",
     },
     {
-      icon: <Trophy className="text-yellow-400" size={24} />,
-      title: "Quality Assurance",
+      icon: <Puzzle className="text-yellow-400" size={24} />,
+      title: "Problem Solving",
       description:
-        "Learning QA processes through internship and practical experience",
+        "Analyzing requirements and delivering effective technical solutions through logical thinking",
     },
   ];
+
 
   return (
     <section id="about" className="py-20 px-4">
@@ -75,21 +76,20 @@ const About = () => {
           >
             <div className="space-y-6">
               <p className="text-lg text-gray-300 leading-relaxed">
-                I'm a Computer Science student at BINUS University, currently in my third year. 
-                With a strong interest in software development 
-                and software engineering, I am dedicated to building a solid foundation in designing, 
-                developing, and improving digital solutions
+                I am a Computer Science student at BINUS University with a strong interest in
+                software development and software engineering, focusing on building scalable
+                and user-centered digital solutions.
               </p>
+
               <p className="text-lg text-gray-300 leading-relaxed">
-                Through internships, organizational involvement, and academic projects,
-                I'm developing both technical skills and soft skills. I enjoy
-                problem-solving and am always eager to learn new technologies
-                and methodologies.
+                Through academic projects and organizational involvement, I have developed
+                both technical and collaborative skills while continuously learning new
+                technologies and best practices.
               </p>
+
               <p className="text-lg text-gray-300 leading-relaxed">
-                I'm actively involved in university organizations and always
-                looking for opportunities to grow, collaborate, and contribute
-                to meaningful projects while continuing to develop my skills.
+                I am motivated to grow as a developer and contribute to impactful projects
+                through teamwork, problem solving, and continuous improvement.
               </p>
             </div>
           </motion.div>

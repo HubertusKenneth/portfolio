@@ -5,35 +5,35 @@ import { motion } from 'framer-motion';
 const Experience = () => {
   const experiences = [
     {
-      title: "Media and Communications Division Activist",
-      company: "Persekutuan Oikoumene BINUS University",
-      duration: "Mar 2025 – Present",
-      location: "Kota Tangerang, Banten, Indonesia",
-      description: "Active in the Media and Communications Division of the Oikoumene Fellowship, contributing to event documentation, content creation, video production, and occasionally supporting events as an MC.",
-      skills: ["Communication", "Content Creation", "Social Media Management", "Event Promotion", "Public Relations", "Digital Marketing"]
+      title: "Quality Assurance Intern",
+      company: "PT Sinergi Prakarsa Utama (Sinergi)",
+      duration: "Jul 2025 – Sep 2025",
+      location: "Tangerang, Indonesia",
+      description: "Performed manual and automated testing on web applications to ensure system reliability and quality. Developed and executed test cases, reported bugs, and collaborated with development teams to validate fixes and improve overall software quality.",
+      skills: ["Software Testing", "QA Processes", "Bug Reporting", "Test Documentation", "Quality Standards", "Manual Testing", "Test Case Design", "Katalon Studio"]
     },
     {
       title: "Streaming Manager",
       company: "Binusian Gaming",
       duration: "Mar 2025 – Present",
-      location: "Remote",
-      description: "Managing streaming operations and live event broadcasts for the university's gaming organization.",
+      location: "Tangerang, Indonesia",
+      description:"Managed live streaming operations and broadcast workflows for esports events, including technical setup and live production. Coordinated streamers, maintained broadcast quality, and ensured smooth execution of online events to enhance audience engagement.",
       skills: ["Streaming Management", "Content Strategy", "Community Building", "Gaming Industry", "OBS Studio", "Video Editing", "Live Production"]
     },
     {
-      title: "Quality Assurance Intern",
-      company: "PT Sinergi Prakarsa Utama (Sinergi)",
-      duration: "Jul 2025 – Sep 2025",
-      location: "Tangerang, Banten, Indonesia",
-      description: "Gained hands-on experience in quality assurance processes and testing automation.",
-      skills: ["Software Testing", "QA Processes", "Bug Reporting", "Test Documentation", "Quality Standards", "Manual Testing", "Test Case Design", "Katalon Studio"]
+      title: "Media and Communications Division Activist",
+      company: "Persekutuan Oikoumene BINUS University",
+      duration: "Mar 2025 – Present",
+      location: "Tangerang, Indonesia",
+      description: "Contributed to the Media and Communications Division by producing photo and video documentation, designing promotional materials, and managing digital content for organizational events. Supported event execution and audience engagement through effective communication strategies.",
+      skills: ["Communication", "Content Creation", "Social Media Management", "Event Promotion", "Public Relations", "Digital Marketing"]
     },
     {
       title: "Event Coordinator",
-      company: "Alam Sutera Royale",
-      duration: "Aug 2024 – Oct 2024",
-      location: "Kota Tangerang, Banten, Indonesia",
-      description: "Coordinated and managed various events, ensuring smooth execution and client satisfaction.",
+      company: "Various Kinds of Events",
+      duration: "Mar 2024 – Dec 2025",
+      location: "Tangerang, Indonesia",
+      description: "Planned and coordinated multiple on site and hybrid events, managing logistics, schedules, and on site operations. Collaborated with stakeholders to ensure smooth event execution, effective communication, and positive participant experiences.",
       skills: ["Event Planning", "Project Management", "Team Leadership", "Timeline Management", "Problem Solving"]
     }
   ];

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, Variants } from "framer-motion";
-import { Github, X, ChevronLeft, ChevronRight } from "lucide-react";
+import { Github, X, ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
 import Edufun1 from "../assets/projects/Edufun1.png";
 import Edufun2 from "../assets/projects/Edufun2.png";
 import Edufun3 from "../assets/projects/Edufun3.png";
@@ -12,6 +12,12 @@ import Willify3 from "../assets/projects/Willify3.png";
 import Willify4 from "../assets/projects/Willify4.png";
 import JawelsDiamond1 from "../assets/projects/JawelsDiamond1.png";
 import JawelsDiamond2 from "../assets/projects/JawelsDiamond2.png";
+import ReadSpace1 from "../assets/projects/ReadSpace1.png";
+import ReadSpace2 from "../assets/projects/ReadSpace2.png";
+import ReadSpace3 from "../assets/projects/ReadSpace3.png";
+import ReadSpace4 from "../assets/projects/ReadSpace4.png";
+import ReadSpace5 from "../assets/projects/ReadSpace5.png";
+
 
 const projects = [
   {
@@ -20,41 +26,58 @@ const projects = [
     description:
       "A web-based LMS built with PHP, MySQL, and Gemini API. Features include role-based authentication, class & material management, gamified quizzes, discussion forums, and an AI-powered chatbot assistant.",
     date: "Feb 2025 – Jul 2025",
-    image: Edufun1,
+    image: Edufun2,
     github: "https://github.com/HubertusKenneth/SE-EduFun",
     gallery: [Edufun1, Edufun2, Edufun3],
+    technologies: ["PHP", "MySQL", "Gemini API"],
   },
   {
     id: 2,
-    title: "Willify - Music Purchasing Application",
+    title: "ReadSpace - ELibrary Website",
     description:
-      "Front-end project using HTML, CSS, JavaScript with features like responsive nav, registration form, playlists, song pages with lyrics & audio player, and auto-play.",
-    date: "Feb 2024 – Jun 2024",
-    image: Willify1,
-    github: "https://github.com/HubertusKenneth/Willify",
-    gallery: [Willify1, Willify2, Willify3, Willify4],
+      "A simple web-based digital library application designed to help users explore, search, and manage book collections efficiently.",
+    date: "Sep 2025 - Dec 2025",
+    image: ReadSpace2,
+    github: "https://github.com/HubertusKenneth/E-Library",
+    demo: "https://readspacee.up.railway.app",
+    gallery: [ReadSpace1, ReadSpace2, ReadSpace3, ReadSpace4, ReadSpace5],
+    technologies: ["PHP Laravel", "MySQL", "Bootstrap", "Railway"],
   },
   {
     id: 3,
     title: "Personal Portfolio Website",
     description:
-      "A responsive personal portfolio website built with React, Tailwind, and Framer Motion showcasing design & development projects with smooth animations.",
+      "A responsive personal portfolio website showcasing skills, experience, projects, and education.",
     date: "Personal Project",
     image: Porto1,
     github: "https://github.com/HubertusKenneth/portfolio",
     gallery: [Porto1, Porto2],
+    technologies: ["React", "TypeScript"],
   },
   {
     id: 4,
-    title: "JAwels & Diamonds - Online Store",
+    title: "Jawels & Diamonds - Online Store",
     description:
-      "A web-based jewelry store application developed with ASP.NET using Domain Driven Design. The system allows admins to manage jewels, handle orders, and generate transaction reports, while customers can register, browse jewelry, add to cart, and checkout securely.",
+      "A web-based jewelry store application developed with ASP.NET using Domain Driven Design.",
     date: "Feb 2024 - Jun 2024",
     image: JawelsDiamond1,
     github: "",
     gallery: [JawelsDiamond1, JawelsDiamond2],
+    technologies: ["C#", "ASP.NET", "SQL Server", "DDD"],
+  },
+  {
+    id: 5,
+    title: "Willify - Music Purchasing Application",
+    description:
+      "Front-end music purchasing application with responsive layout and interactive features.",
+    date: "Feb 2024 – Jun 2024",
+    image: Willify1,
+    github: "https://github.com/HubertusKenneth/Willify",
+    gallery: [Willify1, Willify2, Willify3, Willify4],
+    technologies: ["HTML", "CSS", "JavaScript"],
   },
 ];
+
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -163,6 +186,7 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-3 bg-gray-800 rounded-full hover:bg-gray-700 transition transform hover:scale-110"
+                      title="Github source"
                     >
                       <Github size={22} className="text-white" />
                     </a>
@@ -174,6 +198,19 @@ const Projects = () => {
                       <Github size={22} className="text-white" />
                     </div>
                   )}
+
+                  
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-3 bg-green-600 rounded-full hover:bg-green-700 transition"
+                      title="Live Website"
+                    >
+                      <ExternalLink size={22} className="text-white" />
+                    </a>
+                  )}
                 </div>
               </motion.div>
 
@@ -181,11 +218,27 @@ const Projects = () => {
                 <h3 className="text-2xl font-bold text-white mb-2">
                   {project.title}
                 </h3>
-                <p className="text-gray-400 mb-3">{project.description}</p>
-                <span className="text-sm text-blue-400 font-medium">
+
+                <p className="text-gray-400 mb-3">
+                  {project.description}
+                </p>
+
+                <span className="block text-sm text-blue-400 font-medium mb-3">
                   {project.date}
                 </span>
+                <div className="flex flex-wrap gap-2">
+                  {project.technologies.map((tech, idx) => (
+                    <span
+                      key={idx}
+                      className="px-3 py-1 text-xs font-medium rounded-full
+                      bg-blue-500/10 text-blue-400 border border-blue-400/30"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
+              
             </motion.div>
           ))}
         </motion.div>
