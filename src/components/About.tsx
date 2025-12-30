@@ -37,7 +37,7 @@ const About = () => {
           <motion.div
             initial={{ opacity: 0, y: -30, scale: 0.9 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
-            viewport={{ once: false, amount: 0.1 }}
+            viewport={{ once: true, amount: 0.1 }}
             transition={{
               type: "spring",
               stiffness: 100,
@@ -53,7 +53,7 @@ const About = () => {
           <motion.div
             initial={{ scaleX: 0, opacity: 0 }}
             whileInView={{ scaleX: 1, opacity: 1 }}
-            viewport={{ once: false, amount: 0.1 }}
+            viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.4, ease: "easeOut", delay: 0.05 }}
             className="relative mx-auto mb-8"
           >
@@ -70,7 +70,7 @@ const About = () => {
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false, amount: 0.1 }}
+            viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
             <div className="space-y-6">
@@ -97,7 +97,7 @@ const About = () => {
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false, amount: 0.1 }}
+            viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <div className="bg-gradient-to-br from-gray-800/50 to-gray-700/30 p-8 rounded-2xl backdrop-blur-sm border border-gray-700/50">
@@ -110,7 +110,7 @@ const About = () => {
                     key={index}
                     initial={{ opacity: 0, scale: 0.8 }}
                     whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: false, amount: 0.1 }}
+                    viewport={{ once: true, amount: 0.1 }}
                     transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
                   >
                     <div className="text-center group">

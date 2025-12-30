@@ -89,12 +89,12 @@ const Skills = () => {
         <motion.div
           initial={{ opacity: 0, y: -30, scale: 0.9 }}
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          viewport={{ once: false, amount: 0.3 }}
-          transition={{ 
-            type: "spring", 
-            stiffness: 100, 
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{
+            type: "spring",
+            stiffness: 100,
             damping: 15,
-            duration: 0.8 
+            duration: 0.8
           }}
           className="text-center mb-16"
         >
@@ -105,7 +105,7 @@ const Skills = () => {
           <motion.div
             initial={{ scaleX: 0, opacity: 0 }}
             whileInView={{ scaleX: 1, opacity: 1 }}
-            viewport={{ once: false, amount: 0.1 }}
+            viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
             className="relative mx-auto mb-8"
           >
@@ -122,7 +122,7 @@ const Skills = () => {
           variants={containerVariants}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.3 }}
           className="grid lg:grid-cols-2 xl:grid-cols-3 gap-6 mb-20"
         >
           {skillCategories.map((category, index) => (
@@ -146,9 +146,9 @@ const Skills = () => {
         <motion.div
           initial={{ scaleX: 0, opacity: 0 }}
           whileInView={{ scaleX: 1, opacity: 1 }}
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
-          className="relative w-full h-[2px] mb-16 bg-gradient-to-r 
+          className="relative w-full h-[2px] mb-16 bg-gradient-to-r
                      from-transparent via-blue-400 to-transparent origin-center"
         />
 
@@ -156,7 +156,7 @@ const Skills = () => {
           variants={containerVariants}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {individualSkills.map((skill, index) => (

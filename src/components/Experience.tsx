@@ -44,12 +44,12 @@ const Experience = () => {
         <motion.div
           initial={{ opacity: 0, y: -30, scale: 0.9 }}
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          viewport={{ once: false, amount: 0.3 }}
-          transition={{ 
-            type: "spring", 
-            stiffness: 100, 
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{
+            type: "spring",
+            stiffness: 100,
             damping: 15,
-            duration: 0.8 
+            duration: 0.8
           }}
           className="text-center mb-16"
         >
@@ -59,7 +59,7 @@ const Experience = () => {
             <motion.div
               initial={{ scaleX: 0, opacity: 0 }}
               whileInView={{ scaleX: 1, opacity: 1 }}
-              viewport={{ once: false, amount: 0.1 }}
+              viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
               className="relative mx-auto mb-8"
             >
@@ -74,11 +74,11 @@ const Experience = () => {
 
         <div className="space-y-8">
           {experiences.map((exp, index) => (
-            <motion.div 
+            <motion.div
               key={index}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
             >
               <div className="bg-gradient-to-br from-gray-800/80 to-gray-700/40 p-6 rounded-xl border border-gray-700/50 backdrop-blur-sm hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300">

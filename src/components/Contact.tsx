@@ -36,12 +36,12 @@ const Contact = () => {
         <motion.div
           initial={{ opacity: 0, y: -30, scale: 0.9 }}
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          viewport={{ once: false, amount: 0.3 }}
-          transition={{ 
-            type: "spring", 
-            stiffness: 100, 
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{
+            type: "spring",
+            stiffness: 100,
             damping: 15,
-            duration: 0.8 
+            duration: 0.8
           }}
           className="text-center mb-16"
         >
@@ -52,7 +52,7 @@ const Contact = () => {
             <motion.div
               initial={{ scaleX: 0, opacity: 0 }}
               whileInView={{ scaleX: 1, opacity: 1 }}
-              viewport={{ once: false, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.3 }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
               className="relative mx-auto mb-8"
             >
@@ -75,7 +75,7 @@ const Contact = () => {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.1 }}
+            viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
           >
             <div className="space-y-8 text-center">
@@ -88,11 +88,11 @@ const Contact = () => {
 
               <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto">
                 {contactInfo.map((info, index) => (
-                  <motion.div 
+                  <motion.div
                     key={index}
                     initial={{ opacity: 0, scale: 0.8 }}
                     whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: false, amount: 0.3 }}
+                    viewport={{ once: true, amount: 0.3 }}
                     transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
                   >
                     <div className="group">

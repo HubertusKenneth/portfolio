@@ -102,7 +102,7 @@ const Projects = () => {
         <motion.div
           initial={{ opacity: 0, y: -40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ type: "spring", stiffness: 70, damping: 15 }}
           className="text-center mb-16 overflow-visible"
         >
@@ -113,7 +113,7 @@ const Projects = () => {
           <motion.div
             initial={{ scaleX: 0, opacity: 0 }}
             whileInView={{ scaleX: 1, opacity: 1 }}
-            viewport={{ once: false, amount: 0.1 }}
+            viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
             className="relative mx-auto mb-8"
           >
@@ -130,7 +130,7 @@ const Projects = () => {
           variants={containerVariants}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.3 }}
           className="grid md:grid-cols-2 gap-12"
         >
           {projects.map((project) => (
