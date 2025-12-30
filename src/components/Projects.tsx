@@ -24,7 +24,7 @@ const projects = [
     id: 1,
     title: "EduFun - Learning Management System",
     description:
-      "A web-based LMS built with PHP, MySQL, and Gemini API. Features include role-based authentication, class & material management, gamified quizzes, discussion forums, and an AI-powered chatbot assistant.",
+      "A web based Learning Management System developed using PHP, MySQL, and the Gemini API. The platform supports role based authentication, course and learning material management, interactive gamified quizzes, discussion forums, and a chatbot to enhance the learning experience.",
     date: "Feb 2025 – Jul 2025",
     image: Edufun2,
     github: "https://github.com/HubertusKenneth/SE-EduFun",
@@ -35,7 +35,7 @@ const projects = [
     id: 2,
     title: "ReadSpace - ELibrary Website",
     description:
-      "A simple web-based digital library application designed to help users explore, search, and manage book collections efficiently.",
+      "A web-based digital library application designed to provide an intuitive and efficient book management experience. The system supports role-based access for guests, registered users, and administrators, allowing users to browse books by category, search collections, view detailed book information, and manage favorites, while administrators can manage book data and system content through a dedicated interface.",
     date: "Sep 2025 - Dec 2025",
     image: ReadSpace2,
     github: "https://github.com/HubertusKenneth/E-Library",
@@ -47,7 +47,7 @@ const projects = [
     id: 3,
     title: "Personal Portfolio Website",
     description:
-      "A responsive personal portfolio website showcasing skills, experience, projects, and education.",
+      "A personal portfolio website built to showcase professional skills, academic background, and selected projects. The website features a responsive layout, modern UI design, and smooth animations to deliver a polished and engaging user experience.",
     date: "Personal Project",
     image: Porto1,
     github: "https://github.com/HubertusKenneth/portfolio",
@@ -58,7 +58,7 @@ const projects = [
     id: 4,
     title: "Jawels & Diamonds - Online Store",
     description:
-      "A web-based jewelry store application developed with ASP.NET using Domain Driven Design.",
+      "An online jewelry store application developed using ASP.NET and Domain Driven Design principles. The system enables administrators to manage products and transactions, while customers can register, browse jewelry collections, and complete purchases securely.",
     date: "Feb 2024 - Jun 2024",
     image: JawelsDiamond1,
     github: "",
@@ -67,9 +67,9 @@ const projects = [
   },
   {
     id: 5,
-    title: "Willify - Music Purchasing Application",
+    title: "Willify - Music Store",
     description:
-      "Front-end music purchasing application with responsive layout and interactive features.",
+      "A front end website music store built with HTML, CSS, and JavaScript. The website features a responsive layout, interactive navigation, playlist management, and multimedia elements to enhance user engagement.",
     date: "Feb 2024 – Jun 2024",
     image: Willify1,
     github: "https://github.com/HubertusKenneth/Willify",
@@ -77,6 +77,7 @@ const projects = [
     technologies: ["HTML", "CSS", "JavaScript"],
   },
 ];
+
 
 
 const containerVariants: Variants = {
